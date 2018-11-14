@@ -4,22 +4,20 @@ import PropTypes from 'prop-types';
 import ProduceList from './ProduceList';
 
 function App(){
-  var styles = {
-    display: 'inlineBlock'
-  };
   return (
-    <div style={styles}>
+    <div>
       <style jsx>{`
         font-family: Helvetica;
-        display: inline-block;
-      `}</style>
-      <div style={styles}>
+        display: flex;
+        width: 100%;
+        margin: 5%;
+        `}</style>
+      <div>
         <ProduceList/>
       </div>
-      <div style={styles}>
+      <div>
         <ScheduleList/>
       </div>
-      farmersMarket
     </div>
   );
 }

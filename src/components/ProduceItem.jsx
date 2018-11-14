@@ -6,7 +6,9 @@ function ProduceItem (props){
 
     <div>
       <li>{props.produce}</li>
-            
+      <style jsx>{`
+        list-style-type: none;
+        `}</style>
     </div>
 
   );

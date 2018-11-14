@@ -2,14 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ProduceItem from './ProduceItem';
 
-function Produce (props){
+function Produce(props) {
   return (
     <div>
-      <h3>{props.month}</h3>
+      <h3>{props.month}
+
+        <style jsx>{`
+        text-decoration: underline;
+        `}</style>
+      </h3>
       <ul>
         {props.selection.map((item, index) =>
           <ProduceItem produce={item}
-            key = {index} />
+            key={index} />
         )}
       </ul>
     </div>
