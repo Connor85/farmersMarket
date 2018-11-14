@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 function Schedule(props) {
   return (
     <div>
+
+      {/* <style jsx>{`
+        h3 {
+
+        }
+      `}</style> */}
 
       <h3>
         <style jsx>{`
